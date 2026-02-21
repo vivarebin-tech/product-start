@@ -54,6 +54,12 @@ body {
 }
 
 /* ── Subtitle ── */
+.greeting {
+    font-size: 1.2rem;
+    color: royalblue;
+    font-weight: bold;
+}
+
 .subtitle {
     font-size: 2rem;
     font-weight: bold;
