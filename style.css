@@ -1,21 +1,69 @@
+/* ── Theme variables ── */
+:root {
+    --bg: #f0f0f0;
+    --container-bg: #ffffff;
+    --text: #222222;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --number-bg: #eeeeee;
+    --toggle-bg: #dddddd;
+    --toggle-hover: #cccccc;
+}
+
+body.dark {
+    --bg: #1a1a2e;
+    --container-bg: #16213e;
+    --text: #e0e0e0;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --number-bg: #2a2a4a;
+    --toggle-bg: #2a2a4a;
+    --toggle-hover: #3a3a5a;
+}
+
+/* ── Base ── */
 body {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: var(--bg);
+    color: var(--text);
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* ── Theme toggle button ── */
+#theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+    background-color: var(--toggle-bg);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 100;
+}
+
+#theme-toggle:hover {
+    background-color: var(--toggle-hover);
+    transform: scale(1.1);
+}
+
+/* ── Container ── */
 .container {
     text-align: center;
-    background-color: white;
+    background-color: var(--container-bg);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--shadow);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* ── Lotto numbers ── */
 .lotto-numbers {
     display: flex;
     justify-content: center;
@@ -28,12 +76,14 @@ body {
     height: 40px;
     line-height: 40px;
     border-radius: 50%;
-    background-color: #eee;
+    background-color: var(--number-bg);
     margin: 0 0.5rem;
     font-size: 1.2rem;
     font-weight: bold;
+    transition: background-color 0.3s;
 }
 
+/* ── Generate button ── */
 #generate-btn {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
