@@ -55,11 +55,21 @@ body {
 
 /* ── Subtitle ── */
 .subtitle {
-    font-size: 1.33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #ff69b4;
     margin: 0 0 0.3rem;
     letter-spacing: 0.05em;
+}
+
+.school-logo {
+    height: 2rem;
+    width: auto;
+    vertical-align: middle;
 }
 
 /* ── Container ── */
