@@ -37,9 +37,9 @@ body {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    width: 44px;
-    height: 44px;
-    font-size: 1.3rem;
+    width: 66px;
+    height: 66px;
+    font-size: 1.95rem;
     background-color: var(--toggle-bg);
     border: none;
     border-radius: 50%;
@@ -55,13 +55,13 @@ body {
 
 /* ── Subtitle ── */
 .greeting {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: royalblue;
     font-weight: bold;
 }
 
 .subtitle {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #ff69b4;
     margin: 0 0 0.3rem;
@@ -72,8 +72,8 @@ body {
 .container {
     text-align: center;
     background-color: var(--container-bg);
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 3rem;
+    border-radius: 15px;
     box-shadow: 0 0 10px var(--shadow);
     transition: background-color 0.3s, box-shadow 0.3s;
 }
@@ -82,26 +82,26 @@ body {
 .lotto-numbers {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .number {
     display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 50%;
     background-color: var(--number-bg);
-    margin: 0 0.5rem;
-    font-size: 1.2rem;
+    margin: 0 0.75rem;
+    font-size: 1.8rem;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 /* ── Generate button ── */
 #generate-btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    padding: 1.2rem 2.25rem;
+    font-size: 1.5rem;
     background-color: #4CAF50;
     color: white;
     border: none;
