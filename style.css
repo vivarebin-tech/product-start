@@ -53,6 +53,15 @@ body {
     transform: scale(1.1);
 }
 
+/* ── Subtitle ── */
+.subtitle {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 0 0 0.3rem;
+    letter-spacing: 0.05em;
+}
+
 /* ── Container ── */
 .container {
     text-align: center;
